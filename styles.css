@@ -1,0 +1,60 @@
+body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #canvasHolder, input{
+      position: relative;
+    }
+
+    #circle{
+      position: relative;
+      background: black;
+    }
+
+    #spiro{
+      position: absolute;
+      left: 0;
+    }
+
+    #image{
+      position: absolute;
+      display: none;
+    }
+
+    #sliders div{
+      display: inline-block;
+      padding: 10px 5px 5px 0px;
+    }
+
+    button{
+      margin: 10px 5px 0 0;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    #draw{
+      background: #419BF9;
+      color: white;
+    }
+
+    #draw[disabled]{
+      background: #97c8fc;
+      color: white;
+    }
+
+    input[type=checkbox], button{
+      cursor: pointer;
+    }
+
+    input[type=range]{
+      cursor: ew-resize;
+    }
+
+    input[type=checkbox][disabled], button[disabled], input[type=range][disabled]{
+      cursor: not-allowed;
+    }
+
+    #note{
+      opacity: 0.6;
+      font: 400 11px system-ui;
+    }
